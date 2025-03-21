@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHINMA - Uniform Hub</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script defer src="homepage.js"></script>
+    <script defer src="sidebar.html"></script>
+    <script defer src="sidebar.js"></script> <!-- Sidebar script -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar Container (Will be loaded dynamically) -->
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <header>
+            <h1>PHINMA - UNIFORM HUB</h1>
+            <div class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <section class="dashboard">
+            <h2>Welcome To <span class="highlight">Admin Dashboard!</span></h2>
+
+            <div class="stock-info">
+                <div class="stock-card in-stock">
+                    <h3>RSO</h3>
+                    <p>In Stock</p>
+                    <span>10</span>
+                </div>
+                <div class="stock-card in-stock">
+                    <h3>CORPO MALE</h3>
+                    <p>In Stock</p>
+                    <span>10</span>
+                </div>
+               
+                <div class="stock-card out-of-stock">
+                    <h3>CORPO FEMALE</h3>
+                    <p>Out of Stock</p>
+                    <span>0</span>
+                </div>
+            </div>
+
+            <h2>Recent Activity</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Action Taken</th>
+                        <th>No. of</th>
+                    </tr>
+                </thead>
+                <tbody id="activity-log">
+                    <!-- Data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>

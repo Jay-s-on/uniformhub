@@ -1,0 +1,100 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('cbgl.png') no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-box {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+p a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #fbc02d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.welcome-box {
+    width: 50%;
+    background: #4d774e;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlight {
+    color: #fbc02d;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="adminprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="adminprofile.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="cibg.jpg" alt="PHINMA Logo" class="logo">
+            <h3>PHINMA- UNIFORM HUB <br><span>University of Pangasinan</span></h3>
+        </div>
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="stock.html"><i class="fa fa-box"></i> Stock Management</a></li>
+            <li><a href="uniform.html"><i class="fa fa-tshirt"></i> Uniform Showcase</a></li>
+        </ul>
+        <button id="logout-btn"><i class="fa fa-sign-out-alt"></i> LOG OUT</button>
+    </nav>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="#" id="menu-toggle"><i class="fa fa-bars"></i></a>
+            <h1>PHINMA- UNIFORM HUB</h1>
+            <div class="profile-icon">
+                <a href="adminprofile.html"><i class="fa fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Profile Section -->
+    <div class="profile-container">
+        <h2>ADMIN PROFILE</h2>
+
+        <div class="profile-card">
+            <div class="profile-info">
+                <p><strong>Username:</strong> <span class="highlight">Admin</span></p>
+                <p><strong>Email:</strong> <span class="highlight">admin@gmail.com</span></p>
+                <p><strong>Account Creation Date:</strong> <span class="highlight date">March 9, 2025</span></p>
+
+                <div class="buttons">
+                    <a href="edit-profile.html" class="btn edit-btn">EDIT PROFILE</a>
+                    <a href="change-password.html" class="btn password-btn">CHANGE PASSWORD</a>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img id="profile-pic" src="profile-placeholder.png" alt="Admin Profile">
+                <input type="file" id="file-input" accept="image/*" hidden>
+                <button class="change-profile-btn" id="change-profile-btn">Change Profile</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

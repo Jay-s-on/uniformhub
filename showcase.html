@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Showcase</title>
+    <link rel="stylesheet" href="showcase.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar-container">
+        <div class="logo-container">
+            <img src="cibg.jpg" alt="Logo">
+        </div>
+        <ul class="sidebar">
+            <li><a href="homepage.html"> DASHBOARD</a></li>
+            <li><a href="stock.html"> STOCK MANAGEMENT</a></li>
+            <li><a href="showcase.html"> UNIFORM SHOWCASE</a></li>
+            <li><a href="login.html">LOG OUT</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Navbar -->
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome To <span class="highlight">Uniform Showcase!</span></h1>
+
+        <div class="search-container">
+            <!-- Search Bar -->
+            <input type="text" id="searchInput" placeholder="Search Uniform" onkeyup="searchUniform()">
+          
+        </div>
+        
+        
+        
+
+      <!-- Slider Section -->
+<div class="slider-container">
+    <button class="prev-btn" onclick="prevSlide()">❮</button>
+
+    <div class="slide active">
+        <img src="RSO.jpg" alt="RSO Uniform">
+        <div class="info">
+            <h2>RSO</h2>
+            <p>Category: Event Uniform</p>
+            <p>Price: ₱270.00</p>
+            <p>Stock: 10</p>
+            <p>Sizes: <span class="sizes">XS S M L XL XXL XXXL</span></p>
+        </div>
+    </div>
+
+
+    <div class="slide">
+        <img src="CORPO.jpg" alt="CORPO MALE">
+        <div class="info">
+            <h2>CORPO MALE</h2>
+            <p>Category: Corporate Uniform</p>
+            <p>Price: ₱500.00</p>
+            <p>Stock: 5</p>
+            <p>Sizes: <span class="sizes">XS S M L XL XXL</span></p>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="CORPO.jpg" alt="CORPO FEMALE">
+        <div class="info">
+            <h2>CORPO FEMALE</h2>
+            <p>Category: Corporate Uniform</p>
+            <p>Price: ₱500.00</p>
+            <p>Stock: 5</p>
+            <p>Sizes: <span class="sizes">XS S M L XL XXL</span></p>
+        </div>
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">❯</button>
+</div>
+
+        <!-- Uniform List -->
+        <h2 class="section-title">UNIFORM LIST</h2>
+        <div class="uniform-list">
+            <div class="uniform-item">
+                <img src="RSO.jpg" alt="RSO UNIFORM">
+                <p>RSO</p>
+            </div>
+           
+            <div class="uniform-item">
+                <img src="CORPO.jpg" alt="CORPO FEMALE">
+                <p>CORPO FEMALE</p>
+            </div>
+            <div class="uniform-item">
+                <img src="CORPO.jpg" alt="CORPO MALE">
+                <p>CORPO MALE</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="showcase.js"></script>
+</body>
+</html>

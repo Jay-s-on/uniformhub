@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo-container">
+                <img src="uplogo.png" alt="Logo 1" class="logo">
+                <img src="cibg.jpg" alt="Logo 2" class="logo">
+            </div>
+            <h2>PHINMA- UNIFORM HUB <br> University of Pangasinan</h2>
+            <h3>Login</h3>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="eye-icon" onclick="togglePassword()">👁</span>
+                </div>
+                <p><a href="forgotpassword.html">Forgot Password?</a></p>
+                <a href="homepage.html">
+                    <button type="button" class="login-btn">Log In</button>
+                </a>
+                
+            </form>
+        </div>
+        <div class="welcome-box">
+            <h2>Welcome to the <span class="highlight">Admin Dashboard!</span></h2>
+            <p>Track stock availability, update records, and manage uniform requests.</p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
